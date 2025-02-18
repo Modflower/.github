@@ -1,0 +1,65 @@
+name: Bug report
+description: Create a bug report to help us improve.
+labels: [ 'bug' ]
+type: bug
+
+body:
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        What platform and version of the mod are you using?
+
+        Example:
+          - **Minecraft**: 1.21.4 Server
+          - **Mod**: 0.8.4+1.21.2
+          - **Loader**: Fabric 0.16.10
+          - **Java**: Temurin 21.0.6+7
+
+        Dependencies if applicable:
+          - **Fabric API**: 0.116.1+1.21.4
+          - **Polymer**: 0.11.6+1.21.4
+      value: |
+        - **Minecraft**:
+        - **Mod**:
+        - **Loader**:
+        - **Java**:
+
+        Dependencies if applicable:
+        - **Fabric API**:
+        - **Polymer**:
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: To reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Expected results
+      description: What behavior did you expect?
+      placeholder: e.g., to be wither immune.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Actual results
+      description: What behavior did you observe instead?
+      placeholder: e.g., the wither destroyed it.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: Crash reports, server logs, screenshots, and videos should go here.
+    validations:
+      required: false
